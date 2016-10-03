@@ -1,11 +1,9 @@
 // Initialize Phaser and creates a game
 var game = new Phaser.Game(400, 600, Phaser.AUTO, 'gameDiv');
-
 //variables de personajes
-var player, enemigo, fondo;
+var player, fondo, collisiones = 0, text, enemigos;
 //variables de control
-var direccion = true, backgroundv, nueva_posicion;
-
+var direccion = true, backgroundv;
 // Creates a new 'main' state that will contain the game
 var mainState =
 {
@@ -13,35 +11,40 @@ var mainState =
     preload: function()
     { 
         //precargamos la imagen del mono
-        game.load.image('fondo','assets/fondo.png');
-        game.load.image('player','assets/player.png');
-        game.load.image('enemigo','assets/enemigo.png');
+        game.load.image('fondo','assets/calle.png');
+        game.load.image('player','assets/carro-b.png');
+        game.load.image('enemigo','assets/carro-a.png');
     },
     // Fuction called o after 'preload' to setup the game (called only once)
     create: function()
     {
         //dibujamos al mono
         fondo   = game.add.tileSprite(0,0,400,600,'fondo');
-        player  = game.add.sprite(game.world.centerX,game.world.centerY + 200,'player');
-        enemigo = game.add.sprite(10,0,'enemigo');
+        player  = game.add.sprite(game.world.centerX,game.world.centerY + 185,'player');
+        this.enemigos = game.add.physicsGroup();
         
         // La gravedad, la utilizaremos para los objetos que caen
         game.physics.startSystem(Phaser.Physics.ARCADE);
-        game.physics.arcade.enable([enemigo,player]);
+        game.physics.arcade.enable(player);
 
-        enemigo.body.gravity.y = 50;
-        enemigo.body.velocity.y = 100;
         //Esto hace que se quede pegado en el muro OMG!!
         player.body.collideWorldBounds = true;
 
         //Funciones sobre movimiento
-        //onTap evalua un tap o dobletap
+        //onTap evalua un tap
         game.input.onTap.add(this.onTap,this);
-        backgroundv = 2;  //Velocidad del fondo
+        backgroundv = 10;  //Velocidad del fondo
+        
+        this.timer = game.time.events.loop(2000, this.newWave, this);
+
+        this.score = 0;
+
+        this.labelScore = game.add.text(20, 20, "0", { font: "30px Arial", fill: "#ffffff" });
     },
     // This function is called 60 times per second
     update: function()
     {
+        game.physics.arcade.overlap(player, this.enemigos, this.restartGame, null, this);
         fondo.tilePosition.y += backgroundv;
         
         if (direccion == true)
@@ -52,23 +55,41 @@ var mainState =
         {
             player.body.velocity.x = -250;
         }
-        
-        //movimiento
-        
-        nueva_posicion = Math.floor(Math.random() * 399) + 1;
-        if (enemigo.y > 600)
+    },
+    onTap: function()
+    {
+        if (direccion == true)
         {
-            enemigo.x = nueva_posicion;
-            enemigo.y = 0;
-            enemigo.body.velocity.y = 100;
+            direccion = false;
+        }
+        else
+        {
+            direccion = true;
         }
     },
-    onTap: function(pointer, doubleTap)
+    restartGame: function()
     {
-        if (!doubleTap)
-        {
-            direccion = (direccion === false) ? true : false;
-        }
+        game.state.start('main');
+    },
+    addOneEnemigo: function(x, y)
+    {
+        var enemigo = game.add.sprite(x, y, 'enemigo');
+
+        this.enemigos.add(enemigo);
+
+        game.physics.arcade.enable(enemigo);
+
+        enemigo.body.velocity.y = 200;
+
+        enemigo.checkWorldBounds = true;
+        enemigo.outOfBoundsKill = true;
+    },
+    newWave: function()
+    {
+        var x = Math.floor(Math.random() * 399) + 1;
+        this.addOneEnemigo(x, -100);
+        this.score += 1;
+        this.labelScore.text = this.score;
     }
 };
 
