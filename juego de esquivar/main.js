@@ -178,7 +178,7 @@ var restartMenu =
   }
 };
 
-game.state.add('menu', mainMenu);
+game.state.add('menu', mainMenu); 
 game.state.add('restartMenu', restartMenu);
 game.state.add('main', mainState);
 game.state.start('menu');
