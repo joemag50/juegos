@@ -1,7 +1,7 @@
 //JCGE 02/10/2016: Juego de esquivar
 
 // Initialize Phaser and creates a game
-var game = new Phaser.Game(400, 600, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(window.screen.width, window.screen.height, Phaser.AUTO, 'gameDiv');
 //variables de personajes
 var player, fondo, collisiones = 0, text, enemigos, pause;
 //variables de control
@@ -74,11 +74,11 @@ var mainState =
     //Esto hace que se mueva el personaje
     if (direccion == true)
     {
-      player.body.velocity.x = 250;
+      player.body.velocity.x = 270;
     }
     else
     {
-      player.body.velocity.x = -250;
+      player.body.velocity.x = -270;
     }
   },
   onTap: function()
@@ -175,6 +175,25 @@ var restartMenu =
   onTap: function()
   {
     game.state.start('main');
+  }
+};
+
+var preload =
+{
+  // Function for loading all assets of the game (called only once)
+  preload: function()
+  {
+
+  },
+  // Fuction called o after 'preload' to setup the game (called only once)
+  create: function()
+  {
+
+  },
+  // This function is called 60 times per second
+  update: function()
+  {
+
   }
 };
 
