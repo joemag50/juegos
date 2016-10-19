@@ -1,8 +1,10 @@
 //JCGE 02/10/2016: Juego de esquivar
 
 // Initialize Phaser and creates a game
-var game = new Phaser.Game(window.screen.width, window.screen.height, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO, 'gameDiv');
 //variables de personajes
+var scalex = window.innerWidth * window.devicePixelRatio;
+var scaley = window.innerHeight * window.devicePixelRatio;
 var player, fondo, collisiones = 0, text, enemigos, pause;
 //variables de control
 var direccion = true, backgroundv = 10;
@@ -23,9 +25,9 @@ var mainState =
   {
     //dibujamos al mono y el fondo
     //hice un truco de acomodar siempre al centro de la pantalla, 400 es el tamaño original de la imagen porque si lo haces mas grande se empieza a repetir
-    fondo  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'fondo');
-    pause  = game.add.button(game.world.centerX + 170, 10, 'pause');
-    player = game.add.sprite(game.world.centerX, game.world.centerY + 185, 'player');
+    fondo  = game.add.tileSprite(0, 0, 400, window.innerWidth, 'fondo');
+    pause  = game.add.button(350, 10, 'pause');
+    player = game.add.sprite(50, ((game.world.centerY * 2) - 175), 'player');
 
     game.stage.backgroundColor = "008200"
     // La gravedad, la utilizaremos para el mono
@@ -61,7 +63,7 @@ var mainState =
 
     //Este es el UI de el contador de enemigos creados
     this.score = 0;
-    this.labelScore = game.add.text(game.world.centerX - 200, 30, "0", { font: "40px Arial", fill: "#ffffff" });
+    this.labelScore = game.add.text(20, 30, "0", { font: "40px Arial", fill: "#ffffff" });
     
   },
   // This function is called 60 times per second
@@ -114,7 +116,7 @@ var mainState =
   //Esta crea un enemigo y lo agrega al conteo
   newWave: function()
   {
-    var x = Math.floor(Math.random() * (300)) + (game.world.centerX - 170);
+    var x = Math.floor(Math.random() * (350)) + (1);
     this.addOneEnemigo(x, -100);
   },
   togglePause: function()
@@ -135,9 +137,9 @@ var mainMenu =
   // Fuction called o after 'preload' to setup the game (called only once)
   create: function()
   {
-    var menu  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'menu');
-    var titulo = game.add.sprite(game.world.centerX - 170,50,'titulo');
-    var boton  = game.add.button(game.world.centerX - 170, game.world.centerY + 185, 'boton', this.onTap, this);
+    var menu  = game.add.tileSprite(0, 0, 400, window.innerWidth,'menu');
+    var titulo = game.add.sprite(0,50,'titulo');
+    var boton  = game.add.button(0, ((game.world.centerY * 2) - 175), 'boton', this.onTap, this);
 
     boton.onInputUp.add(this.onTap,this);
   },
@@ -163,9 +165,9 @@ var restartMenu =
   // Fuction called o after 'preload' to setup the game (called only once)
   create: function()
   {
-    fondo  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'fondo');
-    var boton  = game.add.button(game.world.centerX - 170, game.world.centerY + 185, 'boton', this.onTap, this);
-    var titulo = game.add.sprite(game.world.centerX - 170,50,'titulo');
+    fondo  = game.add.tileSprite(0, 0, 400, window.innerWidth,'fondo');
+    var boton  = game.add.button(0, ((game.world.centerY * 2) - 175), 'boton', this.onTap, this);
+    var titulo = game.add.sprite(0, 50,'titulo');
 
     boton.onInputUp.add(this.onTap,this);
   },
