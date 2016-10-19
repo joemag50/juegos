@@ -22,10 +22,12 @@ var mainState =
   create: function()
   {
     //dibujamos al mono y el fondo
-    fondo  = game.add.tileSprite(0, 0, 400, 600,'fondo');
+    //hice un truco de acomodar siempre al centro de la pantalla, 400 es el tamaño original de la imagen porque si lo haces mas grande se empieza a repetir
+    fondo  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'fondo');
     pause  = game.add.button(350, 10, 'pause');
     player = game.add.sprite(game.world.centerX, game.world.centerY + 185, 'player');
 
+    game.stage.backgroundColor = "008200"
     // La gravedad, la utilizaremos para el mono
     game.physics.startSystem(Phaser.Physics.ARCADE);
     game.physics.arcade.enable(player);
@@ -55,7 +57,7 @@ var mainState =
     }
 
     //Esta funcion cada 2000 milisegundos hace la funcion en sus parametros
-    this.timer = game.time.events.loop(2000, this.newWave, this);
+    this.timer = game.time.events.loop(1000, this.newWave, this);
 
     //Este es el UI de el contador de enemigos creados
     this.score = 0;
@@ -96,7 +98,7 @@ var mainState =
   {
     game.state.start('restartMenu');
   },
-  //Esta funcion Agrega 1 enemigo
+  //Esta funcion Agrega 1 enemigo cada tiempo que se determina arriba
   addOneEnemigo: function(x, y)
   {
     var enemigo = game.add.sprite(x, y, 'enemigo');
@@ -133,7 +135,7 @@ var mainMenu =
   // Fuction called o after 'preload' to setup the game (called only once)
   create: function()
   {
-    var menu   = game.add.tileSprite(0,0,400,600,'menu');
+    var menu  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'menu');
     var titulo = game.add.sprite(20,50,'titulo');
     var boton  = game.add.button(20, 400, 'boton', this.onTap, this);
 
@@ -161,7 +163,7 @@ var restartMenu =
   // Fuction called o after 'preload' to setup the game (called only once)
   create: function()
   {
-    fondo      = game.add.tileSprite(0,0,400,600,'fondo');
+    fondo  = game.add.tileSprite(0, 0, 400, window.screen.height,'fondo');
     var boton  = game.add.button(20, 400, 'boton', this.onTap, this);
     var titulo = game.add.sprite(20,50,'titulo');
 
