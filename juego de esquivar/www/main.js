@@ -24,7 +24,7 @@ var mainState =
     //dibujamos al mono y el fondo
     //hice un truco de acomodar siempre al centro de la pantalla, 400 es el tamaño original de la imagen porque si lo haces mas grande se empieza a repetir
     fondo  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'fondo');
-    pause  = game.add.button(350, 10, 'pause');
+    pause  = game.add.button(game.world.centerX + 170, 10, 'pause');
     player = game.add.sprite(game.world.centerX, game.world.centerY + 185, 'player');
 
     game.stage.backgroundColor = "008200"
@@ -61,7 +61,7 @@ var mainState =
 
     //Este es el UI de el contador de enemigos creados
     this.score = 0;
-    this.labelScore = game.add.text(20, 20, "0", { font: "30px Arial", fill: "#ffffff" });
+    this.labelScore = game.add.text(game.world.centerX - 200, 30, "0", { font: "40px Arial", fill: "#ffffff" });
     
   },
   // This function is called 60 times per second
@@ -114,7 +114,7 @@ var mainState =
   //Esta crea un enemigo y lo agrega al conteo
   newWave: function()
   {
-    var x = Math.floor(Math.random() * 399) + 1;
+    var x = Math.floor(Math.random() * (300)) + (game.world.centerX - 170);
     this.addOneEnemigo(x, -100);
   },
   togglePause: function()
@@ -136,8 +136,8 @@ var mainMenu =
   create: function()
   {
     var menu  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'menu');
-    var titulo = game.add.sprite(20,50,'titulo');
-    var boton  = game.add.button(20, 400, 'boton', this.onTap, this);
+    var titulo = game.add.sprite(game.world.centerX - 170,50,'titulo');
+    var boton  = game.add.button(game.world.centerX - 170, game.world.centerY + 185, 'boton', this.onTap, this);
 
     boton.onInputUp.add(this.onTap,this);
   },
@@ -163,9 +163,9 @@ var restartMenu =
   // Fuction called o after 'preload' to setup the game (called only once)
   create: function()
   {
-    fondo  = game.add.tileSprite(0, 0, 400, window.screen.height,'fondo');
-    var boton  = game.add.button(20, 400, 'boton', this.onTap, this);
-    var titulo = game.add.sprite(20,50,'titulo');
+    fondo  = game.add.tileSprite(game.world.centerX - 200, game.world.centerY - (window.screen.height/2), 400, window.screen.height,'fondo');
+    var boton  = game.add.button(game.world.centerX - 170, game.world.centerY + 185, 'boton', this.onTap, this);
+    var titulo = game.add.sprite(game.world.centerX - 170,50,'titulo');
 
     boton.onInputUp.add(this.onTap,this);
   },
