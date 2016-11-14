@@ -1,7 +1,7 @@
 //JCGE 02/10/2016: Juego de esquivar
 
 // Initialize Phaser and creates a game
-var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(400, 600, Phaser.AUTO, 'gameDiv');
 //variables de personajes
 var scalex = window.innerWidth * window.devicePixelRatio;
 var scaley = window.innerHeight * window.devicePixelRatio;
