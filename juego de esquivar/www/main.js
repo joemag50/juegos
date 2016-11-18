@@ -180,7 +180,7 @@ var restartMenu =
     game.state.start('main');
   }
 };
-
+console.log('I lead a muggle\'s life');
 game.state.add('menu', mainMenu); 
 game.state.add('restartMenu', restartMenu);
 game.state.add('main', mainState);
