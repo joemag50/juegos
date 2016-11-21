@@ -4,13 +4,13 @@ using System.Collections;
 
 public class collision : MonoBehaviour
 {
-	private uiManager ui;
+	private uiManagerGame ui;
 	public int health = 1;
 
 	void Start()
 	{
 		//mandas llamar el tag, y el archivo
-		ui = GameObject.FindGameObjectWithTag("UiManager").GetComponent<uiManager>();
+		ui = GameObject.FindGameObjectWithTag("UiManager").GetComponent<uiManagerGame>();
 	}
 	void OnTriggerEnter2D()
 	{
@@ -20,11 +20,11 @@ public class collision : MonoBehaviour
 			Die();
 			if(gameObject.tag == "Enemy")
 			{
-				Debug.Log("Enemigo muerto");
+				//Debug.Log("Enemigo muerto");
 			}
 			else
 			{
-				Debug.Log("Player muerto");
+				//Debug.Log("Player muerto");
 				ui.gameOverActivated();
 			}
 		}

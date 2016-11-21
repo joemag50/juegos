@@ -23,13 +23,13 @@ public class PlayerSpawner : MonoBehaviour
 	void Update ()
 	{
 		//Si quieres el jugador reaparesca
-		//if(playerInstance == null)
-		//{
+		if(playerInstance == null)
+		{
 		//	respawnTimer -= Time.deltaTime;
 		//	if(respawnTimer <= 0)
 		//	{
 		//		SpawnPlayer();				
 		//	}
-		//}
+		}
 	}
 }
