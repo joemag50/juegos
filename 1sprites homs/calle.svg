@@ -22,6 +22,30 @@
    inkscape:export-ydpi="90">
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient12320">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop12322" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop12324" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient12314">
+      <stop
+         style="stop-color:#d64399;stop-opacity:1;"
+         offset="0"
+         id="stop12316" />
+      <stop
+         style="stop-color:#d64399;stop-opacity:0;"
+         offset="1"
+         id="stop12318" />
+    </linearGradient>
     <marker
        inkscape:stockid="SemiCircleIn"
        orient="auto"
@@ -68,6 +92,25 @@
          id="path4223"
          inkscape:connector-curvature="0" />
     </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12314"
+       id="linearGradient12280"
+       x1="107.14285"
+       y1="1973.7905"
+       x2="107.14285"
+       y2="1802.3621"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.7,0,0,1.1666673,-75.000005,-300.39484)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12320"
+       id="linearGradient12326"
+       x1="-259.05002"
+       y1="1977.362"
+       x2="109.04998"
+       y2="1977.362"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -77,8 +120,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="214.3462"
-     inkscape:cy="-1176.8094"
+     inkscape:cx="705.00556"
+     inkscape:cy="-786.78917"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -32849,5 +32892,150 @@
        inkscape:export-filename="C:\Users\Jose\Documents\juegos\1sprites homs\varios assets\edificios.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-  </g>
+    <rect
+       style="opacity:0.77;fill:url(#linearGradient12280);fill-opacity:1;stroke:url(#linearGradient12326);stroke-width:18.10000038;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect12267"
+       width="350"
+       height="350.00018"
+       x="-250.00002"
+       y="1802.3619"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\icon.png"
+       inkscape:export-xdpi="89.486557"
+       inkscape:export-ydpi="89.486557" />
+    <path
+       sodipodi:type="star"
+       style="fill:#2f479d;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="path3427-3-83"
+       sodipodi:sides="3"
+       sodipodi:cx="1100"
+       sodipodi:cy="602.36206"
+       sodipodi:r1="180.27756"
+       sodipodi:r2="90.138779"
+       sodipodi:arg1="0.58800259"
+       sodipodi:arg2="1.6352001"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 1250,702.36205 1094.1987,692.31396 938.39747,682.26587 1025,552.36207 l 86.6025,-129.90381 69.1988,139.95189 z"
+       inkscape:transform-center-x="-35.973675"
+       inkscape:transform-center-y="-10.194456"
+       transform="matrix(-0.83136193,0.17029509,0.17744186,-0.53255136,716.483,2158.5349)"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\icon.png"
+       inkscape:export-xdpi="89.486557"
+       inkscape:export-ydpi="89.486557" />
+    <path
+       sodipodi:type="star"
+       style="fill:#d64399;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="path3427-1"
+       sodipodi:sides="3"
+       sodipodi:cx="1100"
+       sodipodi:cy="602.36206"
+       sodipodi:r1="180.27756"
+       sodipodi:r2="90.138779"
+       sodipodi:arg1="0.58800259"
+       sodipodi:arg2="1.6352001"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 1250,702.36205 1094.1987,692.31396 938.39747,682.26587 1025,552.36207 l 86.6025,-129.90381 69.1988,139.95189 z"
+       inkscape:transform-center-x="57.198184"
+       inkscape:transform-center-y="34.912886"
+       transform="matrix(0.80522218,0.47284986,-0.34103232,0.48392593,-721.01512,1130.6358)"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\icon.png"
+       inkscape:export-xdpi="89.486557"
+       inkscape:export-ydpi="89.486557" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:65.76980591px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="-228.32869"
+       y="1801.6825"
+       id="text3373-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\icon.png"
+       inkscape:export-xdpi="89.486557"
+       inkscape:export-ydpi="89.486557"
+       transform="scale(0.9218686,1.0847533)"><tspan
+         sodipodi:role="line"
+         x="-228.32869"
+         y="1801.6825"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';fill:#ffff00;stroke:none;stroke-opacity:1;"
+         id="tspan3377-8">another</tspan><tspan
+         sodipodi:role="line"
+         x="-228.32869"
+         y="1883.8948"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';fill:#ffff00;stroke:none;stroke-opacity:1;"
+         id="tspan3381-9">car game</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="fill:#6bae9c;fill-opacity:1"
+       id="path3427-8"
+       sodipodi:sides="3"
+       sodipodi:cx="1100"
+       sodipodi:cy="602.36206"
+       sodipodi:r1="180.27756"
+       sodipodi:r2="90.138779"
+       sodipodi:arg1="0.58800259"
+       sodipodi:arg2="1.6352001"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 1250,702.36205 1094.1987,692.31396 938.39747,682.26587 1025,552.36207 l 86.6025,-129.90381 69.1988,139.95189 z"
+       inkscape:transform-center-x="84.213268"
+       inkscape:transform-center-y="19.318274"
+       transform="matrix(1.3839619,0.25243506,-0.47948314,0.56107039,-435.85396,1384.7257)"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\highscore.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="fill:#2f479d;fill-opacity:1"
+       id="path3427-3-8-5-4-7"
+       sodipodi:sides="3"
+       sodipodi:cx="1100"
+       sodipodi:cy="602.36206"
+       sodipodi:r1="180.27756"
+       sodipodi:r2="90.138779"
+       sodipodi:arg1="0.58800259"
+       sodipodi:arg2="1.6352001"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 1250,702.36205 1094.1987,692.31396 938.39747,682.26587 1025,552.36207 l 86.6025,-129.90381 69.1988,139.95189 z"
+       inkscape:transform-center-x="-87.8086"
+       inkscape:transform-center-y="-15.982544"
+       transform="matrix(-1.5946391,-0.2074305,0.48267148,-0.50929835,2248.6963,2428.0996)"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\highscore.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4505-0-8-8"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;line-height:0%;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(566.50803,1766.4234)"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\highscore.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion4507-9-1-47"><rect
+           id="rect4509-6-8-3"
+           width="516.61694"
+           height="231.71791"
+           x="35.677074"
+           y="116.13817"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';fill:#ff00ff" /></flowRegion><flowPara
+         id="flowPara4511-3-4-0">highscore</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4505-0-8-8-0"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;line-height:0%;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(566.50803,1910.4234)"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\highscore.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion4507-9-1-47-3"><rect
+           id="rect4509-6-8-3-2"
+           width="516.61694"
+           height="231.71791"
+           x="35.677074"
+           y="116.13817"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';fill:#ff00ff" /></flowRegion><flowPara
+         id="flowPara4511-3-4-0-0">score</flowPara></flowRoot>  </g>
 </svg>

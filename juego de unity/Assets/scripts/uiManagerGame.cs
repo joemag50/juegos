@@ -6,7 +6,11 @@ using UnityEngine.UI;
 public class uiManagerGame : MonoBehaviour
 {
 	public Text scoreText;
-	public Button[] buttons;
+	public Text finalScoreText;
+	public Text highScoreText;
+	public Button[] buttonsOn;
+	public Button[] buttonsOff;
+	private bool muteActivated = true;
 	bool gameOver;
 	int score;
 	// Use this for initialization
@@ -21,6 +25,18 @@ public class uiManagerGame : MonoBehaviour
 	void Update ()
 	{
 		scoreText.text = "Score: " + score;
+		if (Input.GetKeyUp(KeyCode.Escape))
+		{
+			if (Application.platform == RuntimePlatform.Android)
+			{
+				AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
+				activity.Call<bool>("moveTaskToBack", true);
+			}
+			else
+			{
+				Application.Quit();
+			}
+		}
 	}
 
 	void scoreUpdate()
@@ -29,14 +45,27 @@ public class uiManagerGame : MonoBehaviour
 		{
 			score += 1;
 		}
+		else
+		{
+			if (PlayerPrefs.GetFloat("Highscore") < score)
+			{
+				PlayerPrefs.SetFloat("Highscore", score);
+			}
+			highScoreText.text = "" + PlayerPrefs.GetFloat("Highscore");
+			finalScoreText.text = "" + score;
+		}
 	}
 
 	public void gameOverActivated()
 	{
 		gameOver = true;
-		foreach(Button button in buttons)
+		foreach(Button button in buttonsOn)
 		{
 			button.gameObject.SetActive(true);
+		}
+		foreach(Button button in buttonsOff)
+		{
+			button.gameObject.SetActive(false);
 		}
 	}
 
@@ -60,8 +89,19 @@ public class uiManagerGame : MonoBehaviour
 	{
 		SceneManager.LoadScene("mainMenu");
 	}
-	public void Exit()
+	public void Mute()
 	{
-		Application.Quit();
+		if(muteActivated)
+		{
+			AudioListener.volume = 0;
+			muteActivated = false;
+		}
+		else
+		{
+			AudioListener.volume = 0.50f;
+			muteActivated = true;
+		}
 	}
 }
+
+ 
