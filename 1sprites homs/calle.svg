@@ -119,9 +119,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="705.00556"
-     inkscape:cy="-786.78917"
+     inkscape:zoom="2"
+     inkscape:cx="-450.66627"
+     inkscape:cy="296.88528"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -33037,5 +33037,305 @@
            x="35.677074"
            y="116.13817"
            style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;font-family:'3Dventure';-inkscape-font-specification:'3Dventure Medium';fill:#ff00ff" /></flowRegion><flowPara
-         id="flowPara4511-3-4-0-0">score</flowPara></flowRoot>  </g>
+         id="flowPara4511-3-4-0-0">score</flowPara></flowRoot>    <rect
+       style="fill:#c66f00;fill-opacity:1"
+       id="rect4363-0-21"
+       width="60"
+       height="100.00003"
+       x="-190.00003"
+       y="842.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-e.png" />
+    <rect
+       style="fill:#6d8cbc;fill-opacity:1"
+       id="rect4365-2-52"
+       width="60"
+       height="29.999998"
+       x="-190.00003"
+       y="882.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-e.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-1-3"
+       width="10"
+       height="10"
+       x="-190.00003"
+       y="842.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-e.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-9-0-9"
+       width="10"
+       height="10"
+       x="-140.00002"
+       y="842.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-e.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-5-0"
+       width="10"
+       height="10"
+       x="-190.00003"
+       y="932.362"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-e.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-8-1-1"
+       width="10"
+       height="10"
+       x="-140.00002"
+       y="932.362"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-e.png" />
+    <rect
+       style="fill:#ab1b9e;fill-opacity:1"
+       id="rect4363-0-21-3"
+       width="60"
+       height="100.00003"
+       x="-250.00002"
+       y="702.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-d.png" />
+    <rect
+       style="fill:#6f3361;fill-opacity:1"
+       id="rect4365-2-52-6"
+       width="60"
+       height="29.999998"
+       x="-250.00002"
+       y="742.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-d.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-1-3-2"
+       width="10"
+       height="10"
+       x="-250.00002"
+       y="702.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-d.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-9-0-9-4"
+       width="10"
+       height="10"
+       x="-200"
+       y="702.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-d.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-5-0-1"
+       width="10"
+       height="10"
+       x="-250.00002"
+       y="792.362"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-d.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-8-1-1-0"
+       width="10"
+       height="10"
+       x="-200"
+       y="792.362"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-d.png" />
+    <rect
+       style="fill:#ab1b2e;fill-opacity:1"
+       id="rect4363-0-21-3-3"
+       width="60"
+       height="100.00003"
+       x="-340.00003"
+       y="692.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-c.png" />
+    <rect
+       style="fill:#336f50;fill-opacity:1"
+       id="rect4365-2-52-6-4"
+       width="60"
+       height="29.999998"
+       x="-340.00003"
+       y="732.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-c.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-1-3-2-9"
+       width="10"
+       height="10"
+       x="-340.00003"
+       y="692.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-c.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-9-0-9-4-8"
+       width="10"
+       height="10"
+       x="-290.00003"
+       y="692.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-c.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-5-0-1-9"
+       width="10"
+       height="10"
+       x="-340.00003"
+       y="782.362"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-c.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-8-1-1-0-7"
+       width="10"
+       height="10"
+       x="-290.00003"
+       y="782.362"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-c.png" />
+    <rect
+       style="fill:#25ab1b;fill-opacity:1"
+       id="rect4363-0-21-3-7"
+       width="60"
+       height="100.00003"
+       x="-450"
+       y="692.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-f.png" />
+    <rect
+       style="fill:#58a9b2;fill-opacity:1"
+       id="rect4365-2-52-6-0"
+       width="60"
+       height="29.999998"
+       x="-450"
+       y="732.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-f.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-1-3-2-2"
+       width="10"
+       height="10"
+       x="-450"
+       y="692.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-f.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-9-0-9-4-2"
+       width="10"
+       height="10"
+       x="-400"
+       y="692.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-f.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-5-0-1-1"
+       width="10"
+       height="10"
+       x="-450"
+       y="782.36194"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-f.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-8-1-1-0-3"
+       width="10"
+       height="10"
+       x="-400"
+       y="782.36194"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-f.png" />
+    <rect
+       style="fill:#a1ab1b;fill-opacity:1"
+       id="rect4363-0-21-3-7-4"
+       width="60"
+       height="100.00003"
+       x="-580"
+       y="672.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-g.png" />
+    <rect
+       style="fill:#58a9b2;fill-opacity:1"
+       id="rect4365-2-52-6-0-4"
+       width="60"
+       height="29.999998"
+       x="-580"
+       y="712.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-g.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-1-3-2-2-2"
+       width="10"
+       height="10"
+       x="-580"
+       y="672.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-g.png" />
+    <rect
+       style="fill:#ffcc00"
+       id="rect4367-9-0-9-4-2-8"
+       width="10"
+       height="10"
+       x="-530"
+       y="672.36206"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-g.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-5-0-1-1-6"
+       width="10"
+       height="10"
+       x="-580"
+       y="762.36194"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-g.png" />
+    <rect
+       style="fill:#ff0000"
+       id="rect4367-3-8-1-1-0-3-8"
+       width="10"
+       height="10"
+       x="-530"
+       y="762.36194"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\juego de unity\Assets\assets\carro-g.png" />
+  </g>
 </svg>

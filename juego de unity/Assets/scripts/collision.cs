@@ -20,7 +20,7 @@ public class collision : MonoBehaviour
 			Die();
 			if(gameObject.tag == "Enemy")
 			{
-				//Debug.Log("Enemigo muerto");
+				//Debug.Log("Enemigo tocado papu");
 			}
 			else
 			{

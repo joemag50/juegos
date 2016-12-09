@@ -4,22 +4,23 @@ using System.Collections;
 public class enemySpawner : MonoBehaviour
 {
 
-	public GameObject enemyPrefab;
+	public GameObject[] enemyPrefabs;
 	public float delayTimer = 0.5f;
+	int carNo;
 
 	void Start ()
 	{
 		InvokeRepeating("Spawn",delayTimer,delayTimer);
-		InvokeRepeating("Spawn",delayTimer + 0.8f,delayTimer + 0.7f);
-		InvokeRepeating("Spawn",delayTimer + 1.2f,delayTimer + 1.4f);
-		InvokeRepeating("Spawn",delayTimer + 1.7f,delayTimer + 0.9f);
+		InvokeRepeating("Spawn",15.0f,0.9f);
+		InvokeRepeating("Spawn",25.0f,0.7f);
 	}
 	// Update is called once per frame
 	void Spawn ()
 	{
 		float screenRatio = (float)Screen.width / (float)Screen.height;
 		float widthOrtho = Camera.main.orthographicSize * screenRatio;
-		Vector3 posisionRandom = new Vector3(Random.Range(-widthOrtho, widthOrtho), transform.position.y, transform.position.z); 
-		Instantiate(enemyPrefab, posisionRandom, Quaternion.identity);
+		carNo = Random.Range(0,5);
+		Vector3 posisionRandom = new Vector3(Random.Range((int)-widthOrtho, (int)widthOrtho + 1), transform.position.y, transform.position.z); 
+		Instantiate(enemyPrefabs[carNo], posisionRandom, Quaternion.identity);
 	}
 }
