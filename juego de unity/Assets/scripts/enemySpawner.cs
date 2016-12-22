@@ -19,7 +19,7 @@ public class enemySpawner : MonoBehaviour
 	{
 		float screenRatio = (float)Screen.width / (float)Screen.height;
 		float widthOrtho = Camera.main.orthographicSize * screenRatio;
-		carNo = Random.Range(0,5);
+		carNo = Random.Range(0,7);
 		Vector3 posisionRandom = new Vector3(Random.Range((int)-widthOrtho, (int)widthOrtho + 1), transform.position.y, transform.position.z); 
 		Instantiate(enemyPrefabs[carNo], posisionRandom, Quaternion.identity);
 	}

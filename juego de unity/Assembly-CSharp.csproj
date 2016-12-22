@@ -45,9 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\BackgroundMusic.cs" />
      <Compile Include="Assets\scripts\MovimientoPlayer.cs" />
      <Compile Include="Assets\scripts\PlayerSpawner.cs" />
      <Compile Include="Assets\scripts\collision.cs" />
+     <Compile Include="Assets\scripts\collisionEnemigo.cs" />
      <Compile Include="Assets\scripts\enemySpawner.cs" />
      <Compile Include="Assets\scripts\scrollUV.cs" />
      <Compile Include="Assets\scripts\uiManagerGame.cs" />

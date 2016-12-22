@@ -18,15 +18,7 @@ public class collision : MonoBehaviour
 		if(health <= 0)
 		{
 			Die();
-			if(gameObject.tag == "Enemy")
-			{
-				//Debug.Log("Enemigo tocado papu");
-			}
-			else
-			{
-				//Debug.Log("Player muerto");
-				ui.gameOverActivated();
-			}
+			ui.gameOverActivated();
 		}
 	}
 
