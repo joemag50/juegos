@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="levinson.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64"
+     inkscape:cx="-589.00933"
+     inkscape:cy="647.10488"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true">
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid4138"
+       units="mm"
+       empspacing="5" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#f69900;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136"
+       width="1024"
+       height="768"
+       x="-1468.9462"
+       y="-539.45667" />
+    <path
+       style="fill:#617d54;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1088.8509,369.84258 0,-53.14961 30.686,-17.71653 0,53.1496 -30.686,17.71654"
+       id="path4164"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#db0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -215.30158,218.81901 0,35.43307 230.144553,-132.87402 0,-35.433068 z"
+       id="path4142"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\Proyecto levinson\Assets\Assets\mesa.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -215.30158,218.81901 -184.11564,-106.29922 0,35.43307 184.11564,106.29922 0,-35.43307"
+       id="path4150"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\Proyecto levinson\Assets\Assets\mesa.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a4a49f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -215.30158,183.38593 -15.842967,68.228453 14.842973,85.944992 -215.30158,218.81901 -399.41722,112.51979 -368.73128,94.803262 Z"
+       id="path4152"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\Proyecto levinson\Assets\Assets\mesa.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#69646d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -491.47503,723.74028 -261.33048,590.86627 -614.21879,387.12611 -844.36334,520.00012 Z"
+       id="path4215"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\Proyecto levinson\Assets\Assets\fondo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#6d4a87;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -844.36334,520.00012 230.14455,-132.87401 0,-106.29921 -230.14455,132.87401 z"
+       id="path4217"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\Proyecto levinson\Assets\Assets\fondo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#6d4a87;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -614.21879,387.12611 352.88831,203.74016 0,-106.29922 -352.88831,-203.74015 z"
+       id="path4219"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Jose\Documents\juegos\Proyecto levinson\Assets\Assets\fondo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

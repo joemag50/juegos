@@ -8,7 +8,7 @@ public class scrollUV : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		//InvokeRepeating("Speed",15.0f,2.1f);
+		InvokeRepeating("Speed",15.0f,8f);
 	}
 	
 	// Update is called once per frame
@@ -21,6 +21,6 @@ public class scrollUV : MonoBehaviour {
 
 	void Speed ()
 	{
-		speed = speed + 0.1f;
+		speed = speed + 0.25f;
 	}
 }

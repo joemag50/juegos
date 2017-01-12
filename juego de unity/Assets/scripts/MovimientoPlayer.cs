@@ -22,6 +22,29 @@ public class MovimientoPlayer : MonoBehaviour
 		//Debug.Log(Input.touchCount);
 		//Debug.Log(Input.GetTouch(0).position);
 
+		//if(Input.GetMouseButtonDown(0))
+		//	Debug.Log("Pressed left click.");
+		//if(Input.GetMouseButtonDown(1))
+		//	Debug.Log("Pressed right click.");
+		//if(Input.GetMouseButtonDown(2))
+		//	Debug.Log("Pressed middle click.");
+
+		//if (Application.platform != RuntimePlatform.Android)
+
+		//JCGE Vamos a validar para tambien movernos con mouse pa debugiar
+		//if (Input.GetMouseButtonDown(0))
+		//{
+		//	//Debug.Log("Me estan tocando");
+		//	//Cambio en el movimiento
+		//	if(direccion)
+		//	{
+		//		direccion = false;
+		//	}
+		//	else
+		//	{
+		//		direccion = true;
+		//	}
+		//}
 		//Un dedo esta tocando
 		if(Input.touchCount > 0)
 		{
