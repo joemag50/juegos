@@ -1,26 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scrollUV : MonoBehaviour {
-
-	public float speed;
-	Vector2 offset;
+public class scrollUV : MonoBehaviour
+{
+	public float scrollSpeed;
+	private Vector3 startPosition;
 	// Use this for initialization
 	void Start ()
 	{
-		InvokeRepeating("Speed",15.0f,8f);
+		startPosition = transform.position;
+		InvokeRepeating("Speed", 30f, 20f);
 	}
-	
 	// Update is called once per frame
 	void Update ()
 	{
-		//Debug.Log(Time.time);
-		offset = new Vector2 (0, Time.time * speed);
-		GetComponent<Renderer> ().material.mainTextureOffset = offset;		
+		float newPosition = Mathf.Repeat(Time.time * scrollSpeed, Camera.main.orthographicSize * 2.0f);
+		transform.position = startPosition + Vector3.down * newPosition;
 	}
-
-	void Speed ()
+	void Speed()
 	{
-		speed = speed + 0.25f;
+		scrollSpeed += 2f;
 	}
 }

@@ -12,10 +12,10 @@ public class uiManagerGame : MonoBehaviour
 	public Text highScoreText;
 	public Button[] buttonsOn;
 	public Button[] buttonsOff;
+	public Button[] buttonTap;
 	private bool muteActivated = true;
-	bool gameOver;
+	public  bool gameOver;
 	int score;
-
 	// Use this for initialization
 	void Start ()
 	{
@@ -23,7 +23,6 @@ public class uiManagerGame : MonoBehaviour
 		InvokeRepeating("scoreUpdate",1.0f,0.5f);
 		gameOver = false;
 	}
-	
 	// Update is called once per frame
 	void Update ()
 	{
@@ -41,7 +40,6 @@ public class uiManagerGame : MonoBehaviour
 			}
 		}
 	}
-
 	void scoreUpdate()
 	{
 		if(!gameOver)
@@ -58,10 +56,8 @@ public class uiManagerGame : MonoBehaviour
 			finalScoreText.text = "" + score;
 		}
 	}
-
 	public void gameOverActivated()
 	{
-		//ShowRewardedAd();
 		gameOver = true;
 		foreach(Button button in buttonsOn)
 		{
@@ -71,8 +67,19 @@ public class uiManagerGame : MonoBehaviour
 		{
 			button.gameObject.SetActive(false);
 		}
+		foreach(Button button in buttonTap)
+		{
+			button.gameObject.SetActive(false);
+		}
+		Debug.Log(addHandler.plays);
+		if(addHandler.plays > 5)
+		{
+			addHandler.plays = 0;
+			ShowAd();
+			//ShowRewardedAd();
+		}
+		addHandler.plays = addHandler.plays + 1;
 	}
-
 	public void Pause()
 	{
 		if(Time.timeScale == 1)
@@ -84,7 +91,6 @@ public class uiManagerGame : MonoBehaviour
 			Time.timeScale = 1;
 		}
 	}
-
 	public void Play()
 	{
 		SceneManager.LoadScene("JuegoMain");
@@ -106,7 +112,23 @@ public class uiManagerGame : MonoBehaviour
 			muteActivated = true;
 		}
 	}
-
+	public void tapToMove()
+	{
+		foreach(Button button in buttonTap)
+		{
+			button.gameObject.SetActive(false);
+		}
+	}
+	// Este es la version sencilla, de que todo en default, y desde unity services decides cual es el default
+	public void ShowAd()
+	{
+		if (Advertisement.IsReady())
+		{
+			Advertisement.Show();
+		}
+	}
+	//JCGE: en las opciones de unity 5 tiene que estar forzado el mostrar los anuncios en produccion
+	// Este es para los anuncios largos de tiempo
 	//public void ShowRewardedAd()
 	//{
 	//	if (Advertisement.IsReady("rewardedVideo"))
@@ -115,7 +137,6 @@ public class uiManagerGame : MonoBehaviour
 	//		Advertisement.Show("rewardedVideo", options);
 	//	}
 	//}
-
 	//private void HandleShowResult(ShowResult result)
 	//{
 	//	switch (result)

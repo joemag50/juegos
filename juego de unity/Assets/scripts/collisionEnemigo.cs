@@ -9,12 +9,10 @@ public class collisionEnemigo : MonoBehaviour
 	public float objctForceY;
 	public bool objctdir;
 	public int health = 1;
-
 	void Start()
 	{
 		objctdir = true;
 	}
-
 	void Update()
 	{	
 		//JCGE: Esto hace que tenga un efecto de rebote alazar
@@ -30,7 +28,6 @@ public class collisionEnemigo : MonoBehaviour
 			objctdir = true;
 		}
 	}
-
 	void OnTriggerEnter2D()
 	{
 		//Se mata a la verga
@@ -40,15 +37,13 @@ public class collisionEnemigo : MonoBehaviour
 			Die();
 		}
 	}
-
 	void OnCollisionEnter2D()
 	{
 		//JCGE: Le asignamos una direccion en X y Y
 		rb.AddForce(new Vector2(objctForceX,objctForceY));
 		//Debug.Log(objctdir);
 	}
-
-	void Die()
+	public void Die()
 	{
 		Destroy(gameObject);
 	}

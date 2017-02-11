@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class uiManagerMenu : MonoBehaviour
 {
-
 	// Por si se salen durante el menu de inicio
 	void Update ()
 	{
