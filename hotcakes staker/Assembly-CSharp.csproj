@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\MainHandler.cs" />
+     <Compile Include="Assets\Scripts\MenuHandler.cs" />
      <Compile Include="Assets\Scripts\hotcake.cs" />
      <Compile Include="Assets\Scripts\plate.cs" />
      <Compile Include="Assets\Scripts\spawnerEnemy.cs" />

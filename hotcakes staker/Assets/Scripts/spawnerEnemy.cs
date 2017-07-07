@@ -5,6 +5,7 @@ public class spawnerEnemy : MonoBehaviour {
 
 	public GameObject enemyPrefab;
 	public float delayTimer = 0.5f;
+
 	void Start ()
 	{
 		InvokeRepeating("Spawn",delayTimer,delayTimer);
